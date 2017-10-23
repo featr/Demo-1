@@ -1,0 +1,308 @@
+body {
+    margin:0;
+    padding:0;
+    background-color: white;
+    font-family:'Nunito', sans-serif;
+}
+
+.hamburger-button {
+    font-size:26px;
+    margin:7px 10px;
+    position:absolute;
+    z-index:1000;
+    display:none;
+}
+
+
+header {
+    position:absolute;
+    width:100%;
+}
+
+header nav ul {
+    display:flex;
+    list-style-type: none;
+    margin-left:50px;
+}
+
+header nav ul li {
+    padding:20px 25px;
+}
+
+header nav ul li:hover {
+    background-color: #6BC354;
+    border-radius:5px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color:black;
+    font-size:18px;
+}
+
+.banner {
+    background: url('../img/banner.jpeg') top center no-repeat;
+    background-size:cover;
+    color:white;
+    height:100vh;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-flow:column wrap;
+}
+
+.banner #slogan{
+    color: #4BAC43;
+    font-size:1.5rem;
+    line-height:12px;
+    text-shadow:5px 5px 5px black;
+}
+
+section#principles-section {
+    display:flex;
+    margin-top:20px;
+}
+
+section#principles-section>.principle {
+    flex:1;
+    padding:10px 25px;
+    border-radius:5px;
+    margin:10px;
+    font-size:22px;
+    font-weight:400;
+    cursor:pointer;
+    font-family: serif;
+    display:flex;
+    flex-direction: column;
+}
+
+section#principles-section>.principle p {
+    font-size:16px;
+    line-height:18px;  
+}
+
+section#principles-section>.principle h3 {
+    font-weight:500;
+}
+
+section#principles-section>.principle a {
+    align-self:flex-end;
+    margin-top:auto;
+    margin-bottom:15px;
+    padding: 10px 12px;
+    text-decoration: none;
+    color:white;
+}
+
+section#principles-section>.principle a:hover {
+    background-color: #D4CD01;
+    border-radius:5px;
+    color:white;
+}
+
+
+section#principles-section>.principle:hover {
+    background-color:#4BAC43;
+    box-shadow: 10px 10px 5px #888888;
+    transition: all 0.5s;
+}
+
+#calculator-area {
+    display:flex;
+    margin-top:30px;
+}
+
+.calculator form {
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    padding:10px 25px;
+    font-size:24px;
+    background-color:#D4CD01;
+    margin: 0 10px;
+}
+
+.calculator form input {
+    margin-bottom:20px;
+}
+
+.calculator-img {
+    background:url("../img/calculator2.jpeg") no-repeat center center;
+    background-size:cover;
+    flex:1;
+}
+
+#result {
+    text-align:center;
+    margin-bottom:10px;
+}
+
+button {
+    max-width:100px;
+    align-self:center;
+    border-radius:5px;
+    font-size:1rem;
+    background-color: #EAD898;
+    border:none;
+    padding: 8px 6px;
+}
+
+footer>p {
+    text-align:center;
+    font-weight:700;
+}
+
+@media screen and (max-width:768px) {
+    section#principles-section {
+        flex-flow: column wrap;
+    }
+
+    .calculator-img {
+        display:none;
+    }
+
+    #calculator-area {
+        display:block;
+    }
+
+    .banner #slogan {
+        line-height:30px;
+    }
+
+    div.principle {
+        margin:10px 0;
+        padding:10px 0;
+        background-color:#d96f2a;
+        box-shadow: 10px 10px 5px #888888;
+        transition: all 0.5s;
+    }
+
+    header nav ul {
+        flex-flow:column wrap;
+        text-align:center;
+        margin:0;
+        padding:0;
+        display:none;
+    }
+
+    header nav ul li {
+        padding: 5px 0;
+        background-color:#6BC354;
+        border-bottom: 1px dashed rgb(21, 78, 5)
+    }
+
+    .hamburger-button {
+        display:block;
+    }
+    
+}
+
+/* Diets Page CSS */
+
+.banner-secondary {
+    height:50vh;
+}
+
+.diet-sections {
+    display:flex;
+    flex-flow:column wrap;
+}
+
+.diet-plan {
+    display:flex;
+    margin: 25px 12px;
+    border-bottom: 1px solid #88C057;
+}
+
+.diet-plan .text-container {
+    flex:2;
+    margin:0 8px;
+}
+
+.diet-plan .text-container h2{
+    margin:0;
+    font-weight: 400;
+    color:#88C057;
+}
+
+.diet-plan .text-container p {
+    line-height:30px;
+}
+
+.diet-plan .image-container {
+    flex:1;
+    order:-1;
+}
+
+.diet-plan .image-container.second {
+    order:1;
+}
+
+.image-container img {
+    border-radius:5px;
+    max-width:100%;
+
+}
+
+@media screen and (max-width:768px) {
+    .diet-plan {
+        flex-direction: column;
+    }
+
+    .diet-plan .image-container {
+        order: 1;
+    }
+}
+
+/* Contact Page CSS */
+
+.contact-icons {
+    display:flex;
+    margin-top:50px;
+    width:80%;
+}
+
+.single-icon {
+    padding:0 22px;
+    flex:1 200px;
+}
+
+.contact-icons i {
+    font-size:42px;
+    border-radius:50%;
+    color:#00C853
+    ;    
+}
+
+.single-icon p:first-of-type {
+    color:#1B5E20;
+    font-weight:800;
+}
+
+.single-icon p:last-of-type {
+    color:#1B5E20;
+}
+.single-icon a {
+    text-decoration:none;
+    color:#1B5E20;
+}
+
+.contact-icons i:hover {
+    transform:scale(2,2);
+}
+
+@media screen and (max-width:768px) {
+    .banner {
+        flex-flow:column wrap;
+    }
+
+    .contact-icons {
+        flex-direction:column;
+        width:auto;
+    }
+    #slogan.contact-page {
+        display:none;
+    }
+
+}
