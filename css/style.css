@@ -53,7 +53,7 @@ header nav ul li a {
 }
 
 .banner #slogan{
-    color: #4BAC43;
+    color: white;
     font-size:1.5rem;
     line-height:12px;
     text-shadow:5px 5px 5px black;
@@ -153,6 +153,45 @@ footer>p {
     font-weight:700;
 }
 
+.footer {
+    display:flex;
+    justify-content:space-between;
+    flex-flow: column wrap;
+    margin:0 auto;
+    background-color:#E6EFF6;
+
+}
+
+.footer ul {
+    list-style-type: none;
+    display:flex;
+}
+
+.footer a {
+    color:inherit;
+    text-decoration: none;
+}
+
+.footer ul li {
+    padding:0 5px;
+}
+
+.footer-links {
+    display:flex;
+    justify-content: center;
+}
+
+.footer .rights {
+    display:flex;
+    justify-content: center;
+}
+
+.rights p {
+    margin:0 0 8px 0;
+}
+
+
+
 @media screen and (max-width:768px) {
     section#principles-section {
         flex-flow: column wrap;
@@ -194,6 +233,22 @@ footer>p {
 
     .hamburger-button {
         display:block;
+    }
+
+    .footer {
+        flex-flow:column wrap;
+    }
+
+    .footer ul {
+        flex-flow:column wrap;
+        align-items: center;
+    }
+    ul.footer-list {
+        padding-left:0;
+    }
+
+    .footer ul li {
+        padding:5px;
     }
     
 }
@@ -305,4 +360,35 @@ footer>p {
         display:none;
     }
 
+}
+
+/* About Page CSS */
+
+section.team {
+    display:flex;
+    font-size:16px;
+}
+
+.team img {
+    max-width:100%;
+}
+
+.team .person {
+    flex:1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin:25px;
+}
+
+.team .title {
+    color:grey;
+}
+
+.team .container {
+    padding: 0 16px;
+}
+
+@media screen and (max-width:768px) {
+    section.team {
+        flex-flow:column wrap;
+    }
 }
