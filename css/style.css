@@ -1,394 +1,399 @@
 body {
-    margin:0;
-    padding:0;
-    background-color: white;
-    font-family:'Nunito', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	font-family: 'Nunito', sans-serif;
 }
 
 .hamburger-button {
-    font-size:26px;
-    margin:7px 10px;
-    position:absolute;
-    z-index:1000;
-    display:none;
+	font-size: 26px;
+	margin: 7px 10px;
+	position: absolute;
+	z-index: 1000;
+	display: none;
 }
 
-
 header {
-    position:absolute;
-    width:100%;
+	position: absolute;
+	width: 100%;
 }
 
 header nav ul {
-    display:flex;
-    list-style-type: none;
-    margin-left:50px;
+	display: flex;
+	list-style-type: none;
+	margin-left: 50px;
 }
 
 header nav ul li {
-    padding:20px 25px;
+	padding: 20px 25px;
 }
 
 header nav ul li:hover {
-    background-color: #6BC354;
-    border-radius:5px;
+	background-color: #6bc354;
+	border-radius: 5px;
 }
 
 header nav ul li a {
-    text-decoration: none;
-    color:black;
-    font-size:18px;
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
 }
 
 .banner {
-    background: url('../img/banner.jpeg') top center no-repeat;
-    background-size:cover;
-    color:white;
-    height:100vh;
-    text-align:center;
-    display:flex;
-    align-items:center;
-    justify-content: center;
-    flex-flow:column wrap;
+	background: url('../img/banner.jpeg') top center no-repeat;
+	background-size: cover;
+	color: white;
+	height: 100vh;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column wrap;
 }
 
-.banner #slogan{
-    color: white;
-    font-size:1.5rem;
-    line-height:12px;
-    text-shadow:5px 5px 5px black;
+.banner #slogan {
+	color: white;
+	font-size: 1.5rem;
+	line-height: 12px;
+	text-shadow: 5px 5px 5px black;
 }
 
 section#principles-section {
-    display:flex;
-    margin-top:20px;
+	display: flex;
+	margin-top: 20px;
 }
 
-section#principles-section>.principle {
-    flex:1;
-    padding:10px 25px;
-    border-radius:5px;
-    margin:10px;
-    font-size:22px;
-    font-weight:400;
-    cursor:pointer;
-    font-family: serif;
-    display:flex;
-    flex-direction: column;
+section#principles-section > .principle {
+	flex: 1;
+	padding: 10px 25px;
+	border-radius: 5px;
+	margin: 10px;
+	font-size: 22px;
+	font-weight: 400;
+	cursor: pointer;
+	font-family: serif;
+	display: flex;
+	flex-direction: column;
 }
 
-section#principles-section>.principle p {
-    font-size:16px;
-    line-height:18px;  
+section#principles-section > .principle p {
+	font-size: 16px;
+	line-height: 18px;
 }
 
-section#principles-section>.principle h3 {
-    font-weight:500;
+section#principles-section > .principle h3 {
+	font-weight: 500;
 }
 
-section#principles-section>.principle a {
-    align-self:flex-end;
-    margin-top:auto;
-    margin-bottom:15px;
-    padding: 10px 12px;
-    text-decoration: none;
-    color:white;
+section#principles-section > .principle a {
+	align-self: flex-end;
+	margin-top: auto;
+	margin-bottom: 15px;
+	padding: 10px 12px;
+	text-decoration: none;
+	color: white;
 }
 
-section#principles-section>.principle a:hover {
-    background-color: #D4CD01;
-    border-radius:5px;
-    color:white;
+section#principles-section > .principle a:hover {
+	background-color: #d4cd01;
+	border-radius: 5px;
+	color: white;
 }
 
-
-section#principles-section>.principle:hover {
-    background-color:#4BAC43;
-    box-shadow: 10px 10px 5px #888888;
-    transition: all 0.5s;
+section#principles-section > .principle:hover {
+	background-color: #4bac43;
+	box-shadow: 10px 10px 5px #888888;
+	transition: all 0.5s;
 }
 
 #calculator-area {
-    display:flex;
-    margin-top:30px;
+	display: flex;
+	margin-top: 30px;
 }
 
 .calculator form {
-    flex:1;
-    display:flex;
-    flex-direction:column;
-    padding:10px 25px;
-    font-size:24px;
-    background-color:#D4CD01;
-    margin: 0 10px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 10px 25px;
+	font-size: 24px;
+	background-color: #d4cd01;
+	margin: 0 10px;
 }
 
 .calculator form input {
-    margin-bottom:20px;
+	margin-bottom: 20px;
 }
 
 .calculator-img {
-    background:url("../img/calculator2.jpeg") no-repeat center center;
-    background-size:cover;
-    flex:1;
+	background: url('../img/calculator2.jpeg') no-repeat center center;
+	background-size: cover;
+	flex: 1;
 }
 
 #result {
-    text-align:center;
-    margin-bottom:10px;
+	text-align: center;
+	margin-bottom: 10px;
 }
 
 button {
-    max-width:100px;
-    align-self:center;
-    border-radius:5px;
-    font-size:1rem;
-    background-color: #EAD898;
-    border:none;
-    padding: 8px 6px;
+	max-width: 100px;
+	align-self: center;
+	border-radius: 5px;
+	font-size: 1rem;
+	background-color: #ead898;
+	border: none;
+	padding: 8px 6px;
 }
 
-footer>p {
-    text-align:center;
-    font-weight:700;
+footer > p {
+	text-align: center;
+	font-weight: 700;
 }
 
 .footer {
-    display:flex;
-    justify-content:space-between;
-    flex-flow: column wrap;
-    margin:0 auto;
-    background-color:#E6EFF6;
-
+	display: flex;
+	justify-content: space-between;
+	flex-flow: column wrap;
+	margin: 0 auto;
+	background-color: #e6eff6;
 }
 
 .footer ul {
-    list-style-type: none;
-    display:flex;
+	list-style-type: none;
+	display: flex;
 }
 
 .footer a {
-    color:inherit;
-    text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 .footer ul li {
-    padding:0 5px;
+	padding: 0 5px;
 }
 
 .footer-links {
-    display:flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .footer .rights {
-    display:flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .rights p {
-    margin:0 0 8px 0;
+	margin: 0 0 8px 0;
 }
 
+@media screen and (max-width: 768px) {
+	section#principles-section {
+		flex-flow: column wrap;
+	}
 
+	.calculator-img {
+		display: none;
+	}
 
-@media screen and (max-width:768px) {
-    section#principles-section {
-        flex-flow: column wrap;
-    }
+	#calculator-area {
+		display: block;
+	}
 
-    .calculator-img {
-        display:none;
-    }
+	.banner #slogan {
+		line-height: 30px;
+	}
 
-    #calculator-area {
-        display:block;
-    }
+	div.principle {
+		margin: 10px 0;
+		padding: 10px 0;
+		background-color: #d96f2a;
+		box-shadow: 10px 10px 5px #888888;
+		transition: all 0.5s;
+	}
 
-    .banner #slogan {
-        line-height:30px;
-    }
+	header nav ul {
+		flex-flow: column wrap;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		display: none;
+	}
 
-    div.principle {
-        margin:10px 0;
-        padding:10px 0;
-        background-color:#d96f2a;
-        box-shadow: 10px 10px 5px #888888;
-        transition: all 0.5s;
-    }
+	header nav ul li {
+		padding: 5px 0;
+		background-color: #6bc354;
+		border-bottom: 1px dashed rgb(21, 78, 5);
+	}
 
-    header nav ul {
-        flex-flow:column wrap;
-        text-align:center;
-        margin:0;
-        padding:0;
-        display:none;
-    }
+	.hamburger-button {
+		display: block;
+	}
 
-    header nav ul li {
-        padding: 5px 0;
-        background-color:#6BC354;
-        border-bottom: 1px dashed rgb(21, 78, 5)
-    }
+	.footer {
+		flex-flow: column wrap;
+	}
 
-    .hamburger-button {
-        display:block;
-    }
+	.footer ul {
+		flex-flow: column wrap;
+		align-items: center;
+	}
+	ul.footer-list {
+		padding-left: 0;
+	}
 
-    .footer {
-        flex-flow:column wrap;
-    }
-
-    .footer ul {
-        flex-flow:column wrap;
-        align-items: center;
-    }
-    ul.footer-list {
-        padding-left:0;
-    }
-
-    .footer ul li {
-        padding:5px;
-    }
-    
+	.footer ul li {
+		padding: 5px;
+	}
 }
 
 /* Diets Page CSS */
 
 .banner-secondary {
-    height:50vh;
+	height: 50vh;
 }
 
 .diet-sections {
-    display:flex;
-    flex-flow:column wrap;
+	display: flex;
+	flex-flow: column wrap;
 }
 
 .diet-plan {
-    display:flex;
-    margin: 25px 12px;
-    border-bottom: 1px solid #88C057;
+	display: flex;
+	margin: 25px 12px;
+	border-bottom: 1px solid #88c057;
 }
 
 .diet-plan .text-container {
-    flex:2;
-    margin:0 8px;
+	flex: 2;
+	margin: 0 8px;
 }
 
-.diet-plan .text-container h2{
-    margin:0;
-    font-weight: 400;
-    color:#88C057;
+.diet-plan .text-container h2 {
+	margin: 0;
+	font-weight: 400;
+	color: #88c057;
 }
 
 .diet-plan .text-container p {
-    line-height:30px;
+	line-height: 30px;
 }
 
 .diet-plan .image-container {
-    flex:1;
-    order:-1;
+	flex: 1;
+	order: -1;
 }
 
 .diet-plan .image-container.second {
-    order:1;
+	order: 1;
 }
 
 .image-container img {
-    border-radius:5px;
-    max-width:100%;
-
+	border-radius: 5px;
+	max-width: 100%;
 }
 
-@media screen and (max-width:768px) {
-    .diet-plan {
-        flex-direction: column;
-    }
+@media screen and (max-width: 768px) {
+	.diet-plan {
+		flex-direction: column;
+	}
 
-    .diet-plan .image-container {
-        order: 1;
-    }
+	.diet-plan .image-container {
+		order: 1;
+	}
 }
 
 /* Contact Page CSS */
 
 .contact-icons {
-    display:flex;
-    margin-top:50px;
-    width:80%;
+	display: flex;
+	margin-top: 50px;
+	width: 80%;
 }
 
 .single-icon {
-    padding:0 22px;
-    flex:1 200px;
+	padding: 0 22px;
+	flex: 1 200px;
 }
 
 .contact-icons i {
-    font-size:42px;
-    border-radius:50%;
-    color:#00C853
-    ;    
+	font-size: 42px;
+	border-radius: 50%;
+	color: #00c853;
 }
 
 .single-icon p:first-of-type {
-    color:#1B5E20;
-    font-weight:800;
+	color: #1b5e20;
+	font-weight: 800;
 }
 
 .single-icon p:last-of-type {
-    color:#1B5E20;
+	color: #1b5e20;
 }
 .single-icon a {
-    text-decoration:none;
-    color:#1B5E20;
+	text-decoration: none;
+	color: #1b5e20;
 }
 
 .contact-icons i:hover {
-    transform:scale(2,2);
+	transform: scale(2, 2);
 }
 
-@media screen and (max-width:768px) {
-    .banner {
-        flex-flow:column wrap;
-    }
+@media screen and (max-width: 768px) {
+	.banner {
+		flex-flow: column wrap;
+	}
 
-    .contact-icons {
-        flex-direction:column;
-        width:auto;
-    }
-    #slogan.contact-page {
-        display:none;
-    }
-
+	.contact-icons {
+		flex-direction: column;
+		width: auto;
+	}
+	#slogan.contact-page {
+		display: none;
+	}
 }
 
 /* About Page CSS */
 
 section.team {
-    display:flex;
-    font-size:16px;
+	display: flex;
+	font-size: 16px;
 }
 
 .team img {
-    max-width:100%;
+	max-width: 100%;
 }
 
 .team .person {
-    flex:1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin:25px;
+	flex: 1;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 25px;
 }
 
 .team .title {
-    color:grey;
+	color: grey;
 }
 
 .team .container {
-    padding: 0 16px;
+	padding: 0 16px;
 }
 
-@media screen and (max-width:768px) {
-    section.team {
-        flex-flow:column wrap;
-    }
+#mission .container {
+	margin: 25px 25px;
+	font-size: 18px;
+	background-color: #e6eff6;
+	box-shadow: 10px 10px 5px #888888;
+	transition: all 0.5s;
+	padding: 12px;
+	line-height: 22px;
+}
+
+#mission h2 {
+	color: #4bac43;
+}
+
+@media screen and (max-width: 768px) {
+	section.team {
+		flex-flow: column wrap;
+	}
 }

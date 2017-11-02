@@ -1,79 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
 
-        <header>
-            <nav>
-                <div class="hamburger-button">&#9776;</div>
-                <ul class="navigation-menu">
-                    <li class="active" ><a href="./index.html">Home</a></li>
-                    <li><a href="./diets.html">Weight Loss Diets</a></li>
-                    <li><a href="./about.html">About us</a></li>
-                    <li><a href="./contact.html">Contact us</a></li>
-                </ul>
-            </nav>   
-        </header>
-        <div id="main">
-            <section class="banner">
-                <div id="slogan">
-                    <h1>It is time to balance your life!</h1>
-                    <p class="descriptive-text">contact us at anytime.</p>
-                </div>
-            </section>
-            <section id="principles-section">
-                <div class="principle">
-                    <h3>Exercise Daily</h1>
-                    <p>Want to feel better, have more energy and even add years to your life? Just exercise.The health benefits of regular exercise and physical activity are hard to ignore. Everyone benefits from exercise, regardless of age, sex or physical ability.</p>
-                    <a href="#">Read more ...</a>
-                </div>
-                <div class="principle">
-                    <h3>Eat Healthy</h1>
-                    <p>They say “you are what you eat” and needless to say, it is absolutely true. Our health is nothing but a clear reflection of our food habit. If we consume healthy food and follow a well-balanced diet, we will definitely stay healthy and fit.</p>
-                    <a href="#">Read more ...</a>
-                </div>
-                <div class="principle">
-                    <h3>Sleep Well</h1>
-                    <p>Sleeping well directly affects your mental and physical health and the quality of your waking life. Fall short and it can take a serious toll on your daytime energy, productivity, emotional balance, and even your weight.</p>
-                     <a href="#">Read more ...</a>   
-                </div>
-            </section>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-            <section id="calculator-area">
-                <div class="calculator">
-                    <form>
-                        <label for="weight">Weight (kg)</label>
-                        <input type="float" id="weight">
-                        <label for="height">Height (m)</label>
-                        <input type="float" id="height">
-                        <idv id="result"></idv>
-                        <button>Calculate</button>
-                    </form>
-                </div>
-                <div class="calculator-img"></div>
-            </section>
-        </div>
-        <footer>
-            <div class="footer">
-               <div class="footer-links">
-                   <ul class="footer-list">
-                       <li><a href="#">Diet Plans |</a></li>
-                       <li><a href="#">Contact us |</a></li>
-                       <li><a href="#">Further Reading |</a></li>
-                       <li><a href="#">Partners</a></li>
-                   </ul>
-               </div>
-               <div class="rights">
-                    <p>© All rights reserved to ealektc </p>    
-               </div> 
+<body>
+
+    <header>
+        <nav>
+            <div class="hamburger-button">&#9776;</div>
+            <ul class="navigation-menu">
+                <li class="active">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./views/diets.html">Weight Loss Diets</a>
+                </li>
+                <li>
+                    <a href="./views/about.html">About us</a>
+                </li>
+                <li>
+                    <a href="./views/contact.html">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main">
+        <section class="banner">
+            <div id="slogan">
+                <h1>It is time to balance your life!</h1>
+                <p class="descriptive-text">contact us at anytime.</p>
             </div>
-        </footer>
+        </section>
+        <section id="principles-section">
+            <div class="principle">
+                <h3>Exercise Daily</h1>
+                    <p>Want to feel better, have more energy and even add years to your life? Just exercise.The health benefits
+                        of regular exercise and physical activity are hard to ignore. Everyone benefits from exercise, regardless
+                        of age, sex or physical ability.</p>
+                    <a href="#">Read more ...</a>
+            </div>
+            <div class="principle">
+                <h3>Eat Healthy</h1>
+                    <p>They say “you are what you eat” and needless to say, it is absolutely true. Our health is nothing but
+                        a clear reflection of our food habit. If we consume healthy food and follow a well-balanced diet,
+                        we will definitely stay healthy and fit.</p>
+                    <a href="#">Read more ...</a>
+            </div>
+            <div class="principle">
+                <h3>Sleep Well</h1>
+                    <p>Sleeping well directly affects your mental and physical health and the quality of your waking life. Fall
+                        short and it can take a serious toll on your daytime energy, productivity, emotional balance, and
+                        even your weight.</p>
+                    <a href="#">Read more ...</a>
+            </div>
+        </section>
 
-        <script src="./js/script.js"></script>
-    </body>
+        <section id="calculator-area">
+            <div class="calculator">
+                <form>
+                    <label for="weight">Weight (kg)</label>
+                    <input type="float" id="weight">
+                    <label for="height">Height (m)</label>
+                    <input type="float" id="height">
+                    <idv id="result"></idv>
+                    <button>Calculate</button>
+                </form>
+            </div>
+            <div class="calculator-img"></div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-links">
+                <ul class="footer-list">
+                    <li>
+                        <a href="#">Diet Plans |</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact us |</a>
+                    </li>
+                    <li>
+                        <a href="#">Further Reading |</a>
+                    </li>
+                    <li>
+                        <a href="#">Partners</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rights">
+                <p>© All rights reserved to ealektc </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
 </html>
