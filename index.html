@@ -41,28 +41,51 @@
                 <h3>Exercise Daily</h1>
                     <p>Want to feel better, have more energy and even add years to your life? Just exercise.The health benefits
                         of regular exercise and physical activity are hard to ignore. Everyone benefits from exercise, regardless
-                        of age, sex or physical ability.</p>
-                    <a href="#">Read more ...</a>
+                        of age, sex or physical ability. Physical exercise is the performance of some activity in order to
+                        develop or maintain physical fitness and overall health. It is often directed toward also honing
+                        athletic ability or skill. Frequent and regular physical exercise is an important component in the
+                        prevention of some diseases such as heart disease, cardiovascular disease, Type 2 diabetes and obesity.
+                        Exercises are generally grouped into three types depending on the overall effect they have on the
+                        human body: Flexibility exercises such as stretching improve the range of motion of muscles and joints;
+                        aerobic exercises such as walking and running focus on increasing cardiovascular endurance; and anaerobic
+                        exercises such as weight training, functional training or sprinting increase short-term muscle strength.
+                        Physical exercise is considered important for maintaining physical fitness including healthy weight;
+                        building and maintaining healthy bones, muscles, and joints; promoting physiological well-being.</p>
+
+                    <a class="read-more-button">Read more ...</a>
             </div>
             <div class="principle">
                 <h3>Eat Healthy</h1>
                     <p>They say “you are what you eat” and needless to say, it is absolutely true. Our health is nothing but
                         a clear reflection of our food habit. If we consume healthy food and follow a well-balanced diet,
                         we will definitely stay healthy and fit.</p>
-                    <a href="#">Read more ...</a>
+                    <a class="read-more-button">Read more ...</a>
             </div>
             <div class="principle">
                 <h3>Sleep Well</h1>
                     <p>Sleeping well directly affects your mental and physical health and the quality of your waking life. Fall
                         short and it can take a serious toll on your daytime energy, productivity, emotional balance, and
                         even your weight.</p>
-                    <a href="#">Read more ...</a>
+                    <a class="read-more-button">Read more ...</a>
+            </div>
+            <!-- Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2 class="modal-heading"></h2>
+                    </div>
+                    <div class="modal-body">
+                        <p class="modal-text "></p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
         <section id="calculator-area">
             <div class="calculator">
-                <form>
+                <form id="calculator-form">
                     <label for="weight">Weight (kg)</label>
                     <input type="float" id="weight">
                     <label for="height">Height (m)</label>
@@ -98,7 +121,9 @@
         </div>
     </footer>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/responsive-menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/calculator.js"></script>
 </body>
 
 </html>
