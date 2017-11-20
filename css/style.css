@@ -550,7 +550,7 @@ section.team {
 }
 
 .result {
-	background-color: #5cb85c;
+	background-color: #e6eff6;
 	color: #0a0a3f;
 	margin: auto;
 	border: 1px solid #d4cd01;
@@ -560,6 +560,6 @@ section.team {
 	margin-top: 24px;
 }
 
-#recipes {
+/* #recipes {
 	background-color: #e6eff6;
-}
+} */
