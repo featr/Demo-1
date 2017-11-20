@@ -24,6 +24,11 @@ header nav ul {
 	margin-left: 50px;
 }
 
+.navigation-menu {
+	z-index: 1000;
+	position: relative;
+}
+
 header nav ul li {
 	padding: 20px 25px;
 }
@@ -127,10 +132,30 @@ section#principles-section > .principle:hover {
 	margin-bottom: 20px;
 }
 
+.calculator-diet-text {
+	background: url('../img/banner.jpeg') no-repeat top center;
+	background-size: cover;
+	flex: 1;
+	border: 2px solid #d4cd01;
+	color: white;
+}
 .calculator-img {
 	background: url('../img/calculator2.jpeg') no-repeat center center;
 	background-size: cover;
 	flex: 1;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.calculator-diet-text > h1,
+.calculator-diet-text > a {
+	padding: 0 24px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	text-shadow: 5px 5px 5px black;
 }
 
 #result {
@@ -198,6 +223,10 @@ footer > p {
 		display: none;
 	}
 
+	.calculator-result {
+		margin: 10px;
+	}
+
 	#calculator-area {
 		display: block;
 	}
@@ -253,7 +282,20 @@ footer > p {
 /* Diets Page CSS */
 
 .banner-secondary {
-	height: 50vh;
+	height: 65vh;
+}
+
+#random-diet-container {
+	color: black;
+	text-align: center;
+	padding-bottom: 24px;
+}
+
+#random-diet-button > button {
+	max-width: 200px;
+	padding: 12px;
+	cursor: pointer;
+	background-color: #6bc354;
 }
 
 .diet-sections {
@@ -467,4 +509,57 @@ section.team {
 
 .modal-text {
 	line-height: 22px;
+}
+
+/* Search CSS */
+
+#wrapper {
+	margin: 0 auto;
+	max-width: 380px;
+	text-align: center;
+}
+
+#submit {
+	margin-left: -53px;
+	max-width: 67px;
+	height: 39px;
+	font-size: 14px;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+}
+
+#search {
+	padding: 15px 20px 12px 30px;
+	transition: width 0.4s ease-in-out;
+	background-color: white !important;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-24.png)
+		left no-repeat;
+}
+
+.search-links {
+	color: white;
+	display: block;
+	text-decoration: none;
+}
+.search-links:hover {
+	text-decoration: none;
+	color: inherit;
+	border-left: 3px solid #d4cd01;
+}
+
+.result {
+	background-color: #5cb85c;
+	color: #0a0a3f;
+	margin: auto;
+	border: 1px solid #d4cd01;
+}
+
+.results-container {
+	margin-top: 24px;
+}
+
+#recipes {
+	background-color: #e6eff6;
 }

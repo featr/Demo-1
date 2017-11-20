@@ -21,6 +21,9 @@
                     <a href="./diets.html">Weight Loss Diets</a>
                 </li>
                 <li>
+                    <a href="./recipes.html">Recipes</a>
+                </li>
+                <li>
                     <a href="./about.html">About us</a>
                 </li>
                 <li>
@@ -35,10 +38,11 @@
                 <h1>It is time to balance your life!</h1>
                 <p class="descriptive-text">contact us at anytime.</p>
             </div>
+
         </section>
-        <section class="diet-sections">
-            <div class="diet-plan">
-                <div class="text-container">
+        <section class="diet-sections ">
+            <div class="diet-plan ">
+                <div class="text-container ">
                     <h2>The Paleo Diet</h2>
                     <p>The paleo diet claims that modern humans should eat the same foods that their hunter-gatherer ancestors
                         ate — the way humans were genetically designed to eat before agriculture developed. The theory is
@@ -46,12 +50,12 @@
                         and processed foods. While it's debatable that this diet is comprised of the same foods your ancestors
                         ate, it is linked to several impressive health benefits.</p>
                 </div>
-                <div class="image-container first">
-                    <img src="../img/paleo.jpeg" alt="">
+                <div class="image-container first ">
+                    <img src="../img/paleo.jpeg " alt=" ">
                 </div>
             </div>
-            <div class="diet-plan">
-                <div class="text-container">
+            <div class="diet-plan ">
+                <div class="text-container ">
                     <h2>The Zone Diet</h2>
                     <p>The zone diet is a low-glycemic load diet on which you limit carbs to 35–45% of daily calories and protein
                         and fat to 30% each (89). It recommends eating only carbs with a low glycemic load. The glycemic
@@ -60,25 +64,52 @@
                         your blood glucose levels. The Zone diet was initially developed to reduce diet-induced inflammation,
                         cause weight loss and reduce the risk of developing chronic diseases (89).</p>
                 </div>
-                <div class="image-container second">
-                    <img src="../img/zone-diet.jpg" alt="">
+                <div class="image-container second ">
+                    <img src="../img/zone-diet.jpg " alt=" ">
                 </div>
             </div>
-            <div class="diet-plan">
-                <div class="text-container">
+            <div class="diet-plan ">
+                <div class="text-container ">
                     <h2>The Atkins Diet</h2>
                     <p>The Atkins diet is the most well-known low-carb weight loss diet. Its proponents state that you can lose
                         weight by eating as much protein and fat as you like, as long as you avoid carbs. The main reason
                         why low-carb diets are so effective for weight loss is that they reduce your appetite. This causes
                         you to eat fewer calories without having to think about it</p>
                 </div>
-                <div class="image-container third">
-                    <img src="../img/atkins.jpeg" alt="scale">
+                <div class="image-container third ">
+                    <img src="../img/atkins.jpeg " alt="scale ">
                 </div>
             </div>
         </section>
+        <div id="random-diet-container">
+            <h2>Can't decide on a diet?</h2>
+            <div>
+                <h3>Put your life in the hands of a computer.</h3>
+                <div id="random-diet-button">
+                    <button>Random Diet</button>
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2 class="modal-heading"></h2>
+                    </div>
+                    <div class="modal-body">
+                        <p class="modal-text "></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
-    <script src="../js/responsive-menu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin=" anonymous "></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js " integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin=" anonymous "></script>
+    <script src="../js/responsive-menu.js "></script>
+    <script src="../js/diet-picker.js"></script>
+    <script src="../js/scroll-animation.js"></script>
 </body>
 
 </html>

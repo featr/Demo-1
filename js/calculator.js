@@ -1,14 +1,41 @@
 const calculateBMI = e => {
 	e.preventDefault();
 
-	let bodyWeight = parseFloat(document.querySelector('#weight').value);
-	let bodyHeight = parseFloat(document.querySelector('#height').value);
+	const image = $('.calculator-result');
+
+	let bodyWeight = parseFloat($('#weight').val());
+	let bodyHeight = parseFloat($('#height').val());
+
 	let result = Math.round(bodyWeight / Math.pow(bodyHeight, 2) * 100) / 100;
+
+	const slide = (heading = 'Your BMI is in the norm. Keep up the good work!', text) => {
+		setTimeout(() => {
+			image
+				.show('slide', { direction: 'left' }, 'slow')
+				.removeClass('calculator-img')
+				.find('h1')
+				.html(heading)
+				.siblings()
+				.html(text);
+		}, 1000);
+	};
+
 	if (typeof result === 'number' && !isNaN(result)) {
-		document.querySelector('#result').innerHTML = 'Your BMI is ' + result;
+		if (result <= 25) {
+			$('#result').html('Your BMI is ' + result);
+			image.hide('slide', { direction: 'right' }, 'slow', slide());
+		} else if (result > 25) {
+			$('#result').html('Your BMI is ' + result);
+			image.hide(
+				'slide',
+				{ direction: 'right' },
+				'slow',
+				slide('Seems like you might be overweight.', 'You can choose one of our diet plans')
+			);
+		}
 	} else {
-		document.querySelector('#result').innerHTML = 'invalid input';
+		$('#result').html('invalid input');
 	}
 };
 
-document.querySelector('#calculator-form').addEventListener('submit', calculateBMI);
+$('#calculator-form').on('submit', calculateBMI);

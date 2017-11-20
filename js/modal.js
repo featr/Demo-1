@@ -1,21 +1,23 @@
-const modal = document.querySelector('#myModal');
+const modal = $('#myModal');
 
-document.querySelector('#principles-section').addEventListener('click', e => {
+$('#principles-section').on('click', e => {
 	if (e.target.matches('.read-more-button')) {
-		document.querySelector('.modal-heading').innerHTML =
-			e.target.parentElement.firstElementChild.innerHTML;
-		document.querySelector('.modal-text').innerHTML =
-			e.target.parentElement.firstElementChild.nextElementSibling.innerHTML;
-		modal.style.display = 'block';
+		$('.modal-heading').html(e.target.parentElement.firstElementChild.innerHTML);
+
+		$('.modal-text').html(
+			e.target.parentElement.firstElementChild.nextElementSibling.innerHTML
+		);
+
+		modal.css('display', 'block');
 	}
 });
 
-document.querySelector('.close').addEventListener('click', () => {
-	modal.style.display = 'none';
+$('.close').on('click', () => {
+	modal.css('display', 'none');
 });
 
 window.addEventListener('click', e => {
-	if (event.target == modal) {
-		modal.style.display = 'none';
+	if (e.target.matches('#myModal')) {
+		modal.css('display', 'none');
 	}
 });

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" rel="stylesheet">
+    <link href=" ../css/style.css " rel="stylesheet ">
+</head>
+
+<body id="recipes">
+    <header>
+        <nav>
+            <div class="hamburger-button">&#9776;</div>
+            <ul class="navigation-menu">
+                <li class="active">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./diets.html">Weight Loss Diets</a>
+                </li>
+                <li>
+                    <a href="./recipes.html">Recipes</a>
+                </li>
+                <li>
+                    <a href="./about.html">About us</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner banner-secondary">
+        <div id="slogan">
+            <h1>Search for healthy recipes in our database!</h1>
+            <!-- <p class="descriptive-text">contact us at anytime.</p> -->
+        </div>
+        <div class="container" id="wrapper">
+
+            <div class="row">
+                <form class="form-inline" id="searchForm" action="search" method="post">
+
+                    <div class="form-group">
+                        <div class="col-xs-9">
+                            <input class="form-control" id="search" type="text" name="search" placeholder="Search ..">
+                        </div>
+                        <div class="col-xs-3">
+                            <input class="btn btn-success btn-sm" id='submit' value="Search" type="button">
+                        </div>
+                    </div>
+            </div>
+            </form>
+
+        </div>
+    </section>
+
+    <div class="row text-center results-container">
+        <div id="res" class="col-xs-12 results">
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin=" anonymous "></script>
+    <script src="../js/api-diets.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js "></script>
+    <script src="../js/responsive-menu.js"></script>
+</body>
+
+</html>
