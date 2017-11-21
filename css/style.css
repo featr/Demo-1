@@ -400,6 +400,10 @@ footer > p {
 
 /* About Page CSS */
 
+.toggled-info {
+	display: none;
+}
+
 section.team {
 	display: flex;
 	font-size: 16px;
@@ -411,10 +415,11 @@ section.team {
 }
 
 .team .person {
-	flex: 1;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	margin: 25px;
 	max-width: 360px;
+	cursor: pointer;
+	align-self: flex-start;
 }
 
 .team .title {
@@ -559,7 +564,3 @@ section.team {
 .results-container {
 	margin-top: 24px;
 }
-
-/* #recipes {
-	background-color: #e6eff6;
-} */
