@@ -448,6 +448,9 @@ section.team {
 	section.team {
 		flex-flow: column wrap;
 	}
+	.calculator-result {
+		margin: 0 10px;
+	}
 }
 
 /* Modal css */
@@ -563,4 +566,20 @@ section.team {
 
 .results-container {
 	margin-top: 24px;
+}
+
+.recipe-images {
+	max-width: 150px;
+	height: 175px;
+}
+
+.result.well {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px auto;
+}
+
+.result.well > * {
+	flex: 1;
+	align-self: center;
 }
